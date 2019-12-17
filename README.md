@@ -1,1 +1,5 @@
 # OpenSimWithPython
+Technically OpenSim functions used in C++ and MATLAB interfaces are accessible to python users. However, there is not a straightforward documentation on how to use them. I found a useful python library called [pyosim](https://github.com/pyomeca/pyosim) that is a part of [pyomeca](https://github.com/pyomeca) library. The issue with this library is that it cannot be installed on a conda env with Python 3.6. I used the code on their [GitHub](https://github.com/pyomeca/pyosim) and created a version compatible with Python 3.6 that can be found in OpenSimPythonTools folder in the code repository.
+
+This is the Python version of the [MATLAB OpenSime Pipeline Tool](https://simtk.org/projects/matlab_tools). The OpenSimPythonTools contains the code for different OpenSim simulations. In the RunAll.py I show how to do Scaling (for models that have the markers information), Inverse Kinematics, and Inverse Dynamics. To do RRA, CMC or Forward Kinematics, refer to the corresponding functions in OpenSimPythonTools where you can find an example of how you need to use the function.
+
